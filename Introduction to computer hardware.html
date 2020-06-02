@@ -1,0 +1,277 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 50px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 100%;
+            color: DarkOrange;
+        }
+        #myBtn:hover {
+                background-color: transparent;
+                color: pink;
+            }
+
+         body {
+            background-image: linear-gradient(to bottom right,DarkSlateGray,#141f1f);
+            padding-right:15px;
+            padding-left: 10px;
+        }
+
+        .button {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button2 {
+            background-color: DarkKhaki;
+            color: FireBrick;
+            border-radius: 50px;
+            position: absolute;
+            top: 4px;
+            right: 685px;
+        }
+        .button2:hover {
+                background-color: pink;
+                color: black;
+                border-radius: 50px;
+            }
+
+        .button3 {
+            background-color: DarkKhaki;
+            color: FireBrick;
+            border-radius: 50px;
+            position: absolute;
+            top: 4px;
+            right: 348px;
+        }
+        .button3:hover {
+                background-color: pink;
+                color: black;
+                border-radius: 50px;
+            }
+
+        .button4 {
+            background-color: DarkKhaki;
+            color: FireBrick;
+            border-radius: 50px;
+            position: absolute;
+            top: 4px;
+            right: 10px;
+        }
+        .button4:hover {
+                background-color: pink;
+                color: black;
+                border-radius: 50px;
+            }
+
+        .button1 {
+            background-color: DarkKhaki;
+            color: FireBrick;
+            border-radius: 50px;
+            position: absolute;
+            top: 4px;
+            cursor: pointer;
+            font-size: 30px;
+            padding: 8px 16px;
+        }
+        .button1:hover {
+                background-color: pink;
+                color: black;
+                border-radius: 50px;
+            }
+    </style>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <span class="glyphicon glyphicon-circle-arrow-up"></span>
+    </button>
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+        } else {
+        mybutton.style.display = "none";
+        }
+        }
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <button class="button button2" onclick="document.location = 'history of computer.html'">
+        <strong>History of computer</strong>
+    </button>
+    <button class="button button3" onclick="document.location = 'Introduction to computer software.html'">
+        <strong>Introduction to computer software</strong>
+    </button>
+    <button class="button button4" onclick="document.location = 'computer Programming languages.html'">
+        <strong>Computer Programming languages</strong>
+    </button>
+    <button class="button button1" onclick="document.location = 'index.html'">
+        <i class="fa fa-home"></i>
+    </button>
+    <br /><br /><br /><br />
+    <svg width="1500" height="70">
+        <rect width="1500" height="70" style="fill:orange" />
+        <text x="15" y="50" fill="black" style="font-size:35px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Introduction to computer hardware:</text>
+    </svg>
+    <br /><br />
+    <p style="color:white;font-size:20px;font-family:Helvetica">
+        Computer hardware is the physical elements a computer program needs to operate. It
+        encompasses everything using a circuit board which works in just a PC or notebook;<img src="images/computer hardware.jpg" width="400" height="300" align="right" style="margin:30px 50px"> <br />
+        such as the motherboard, graphics card, and CPU (Central Processing Unit), venting
+        fans, webcam, electricity distribution, etc.
+    </p>
+    <p style="color:white;font-size:20px;font-family:Helvetica">
+        Even though the plan of hardware is different because of their differences in dimension
+        involving notebooks and PCs, exactly the core elements will be located in either. There
+        would not be any means of conducting. Software is defined as the digital applications that
+        operate on your own pc; this will be, operating system, web browser, word-processing files, etc.
+    </p>
+    <p style="color:white;font-size:20px;font-family:Helvetica">
+        Though a computer may operate when applications and hardware are still all functioning the
+        hardware will be most relied on by the rate of a machine.<br />
+        When establishing a computer, or just replacing components that are old, you might have to be
+        familiar with particular hardware. This guide’s objective is to assist you to realize the inner-workings
+        of your PC.
+    </p><br />
+    <svg width="1500" height="50">
+        <rect width="1500" height="50" style="fill:orange" />
+        <text x="15" y="35" fill="black" style="font-size:30px;font-family:'Times New Roman', Times, serif">Motherboard:</text>
+    </svg><br /><br />
+    <p style="color:white;font-size:20px;font-family:Helvetica">
+        The motherboard is in the middle of what constitutes a PC function. It can be a heart that hardware runs
+        via and houses both the CPU. The functions as a mind; communicating allocating electricity where it is
+        required and coordinating throughout the rest of the parts.
+    </p>
+    <p style="color:white;font-size:20px;font-family:Helvetica">
+        It is important to assess what hardware interfaces the motherboard provides when picking a motherboard.
+        It is crucial to assess just how many USB interfaces, and what quality (USB 2.0, 3.0, 3.1) there, and what
+        screen ports are utilized (HDMI, DVI, RGB) and the number of each you will find. The interfaces on the
+        motherboard may help you specify like what kind of graphics card and RAM you are able to utilize, what
+        hardware will be compatible with your personal computer.
+
+    </p>
+    <p style="color:white;font-size:20px;font-family:Helvetica">
+        It is to a different among the parts of hardware: the chip, Even though the motherboard is 1 part of the circuitry.
+        <img style="transform: rotate(90deg);margin:-40px 600px" ; src="images/motherboard.png" width="300" height="400" align="right">
+    </p>
+
+    <svg width="1500" height="50">
+        <rect width="1500" height="50" style="fill:orange" />
+        <text x="15" y="35" fill="black" style="font-size:30px;font-family:'Times New Roman', Times, serif">CPU: Central Processing/Processor Unit:</text>
+    </svg><br /><br />
+    <p style="color:white;font-size:20px;font-family:Helvetica">
+
+        The CPU ( Central Processing Unit or chip ) is in charge of processing all data from programs
+        run from the PC. The’clock speed’,and also the rate in which the chip processes advice, is <img src="images/cpu.jpg" width="250" height="200" align="left" style="margin:10px 200px">
+        measured in gigahertz (GHz). This usually means that a chip advertising a GHz score will
+        perform quicker than a processor of an era and the brand.
+        CPU is called the brain of our computer because it accepts data, provides temporary memory space
+        to it until it is stored(saved) on the hard disk, performs logical operations on it and hence processes
+        (here also means converts) data into information. We all know that a computer consists of hardware and
+        software.Software is a set of programs that performs multiple tasks together. An operating system is
+        also a software (system software) that helps humans to interact with the computer system.
+    </p>
+    <svg width="1500" height="50">
+        <rect width="1500" height="50" style="fill:orange" />
+        <text x="15" y="35" fill="black" style="font-size:30px;font-family:'Times New Roman', Times, serif">RAM:</text>
+    </svg><br /><br />
+    <p style="color:white;font-size:20px;font-family:Helvetica">
+        Random Access Memory, or RAM, is hardware contained at the motherboard’s memory card.<img src="images/ram.jpg" width="250" height="200" align="right" style="margin:0px 200px">
+        RAM’s part would be to do this in a means which makes this information accessible and to save advice.
+        The tasks which need arbitrary memory could function; making pictures for graphic layout, edited movie or
+        photos, multi-tasking with numerous programs open (as an instance, conducting a game on a single display
+        and chatting through Discord on another).
+    </p>
+    <p style="color:white;font-size:20px;font-family:Helvetica">
+        Just how much RAM you need is dependent upon the applications which you’ll be running.
+        The layout can use up of 16GB, although intensity gambling utilizes 8GB of memory once done along with
+        other applications.
+    </p>
+    <svg width="1500" height="50">
+        <rect width="1500" height="50" style="fill:orange" />
+        <text x="15" y="35" fill="black" style="font-size:30px;font-family:'Times New Roman', Times, serif">Hard Disk:</text>
+    </svg><br /><br />
+    <p style="color:white;font-size:20px;font-family:Helvetica">
+        The hard disk is a storage apparatus for keeping information that is temporary and permanent accountable.
+        This information comes in several forms however is anything set up or stored into a computer: as an instance,
+        functioning system, computer applications, family photographs and so on.
+    </p>
+    <p style="color:white;font-size:20px;font-family:Helvetica">
+        There are two distinct forms of storage devices: the classic hard disk drive (HDD) and
+        also the more recent quad-core pushes (SSD). Hard disk drives operate by writing information on disks
+        called even though a drive stores information by utilizing flash memory processors that are static.
+    </p>
+    <svg width="1500" height="50">
+        <rect width="1500" height="50" style="fill:orange" />
+        <text x="15" y="35" fill="black" style="font-size:30px;font-family:'Times New Roman', Times, serif">Graphics Processing Unit: GPU:</text>
+    </svg><br /><br />
+    <img src="images/GPU.jpg" width="250" height="200" align="left" style="margin:-10px 50px">
+    <p style="color:white;font-size:20px;font-family:Helvetica">
+        Essential for 3D rendering, the GPU does precisely what its title procedures and indicates batches
+        of images data. You’ll realize your computer’s graphics card contains at least. Rather than the graphics
+        capacities that PC motherboards provide graphics cards interface machine to operate exclusively on images.
+        This means if you would like to have a little more performance from the 21, that you may update your graphics card.
+    </p>
+
+    <p style="color:white;font-size:20px;font-family:Helvetica">
+        Beyond producing, which makes them an extension into the central processing device, Additionally,
+        but GPUs meet a wide capacity.
+    </p><br />
+    <svg width="1500" height="50">
+        <rect width="1500" height="50" style="fill:orange" />
+        <text x="15" y="35" fill="black" style="font-size:30px;font-family:'Times New Roman', Times, serif">Electricity Supply Unit: PSU:</text>
+    </svg><br /><br />
+    <p style="color:white;font-size:20px;font-family:Helvetica">
+        A power distribution unit does supply electricity to your personal pc. It’s the point at which the motherboard
+        to part hardware enters your system and then allocates electricity. Not many power supplies are created evenly
+        and without the wattage PSU, your machine will fail to do the job.
+    </p>
+    <img src="images/PSU.png" width="400" height="250" align="left" style="margin:0px 50px">
+    <p style="color:white;font-size:20px;font-family:Helvetica">
+        Even though the magnitude of this PSU will depend upon the energy consumption of the machine
+        A computer will desire a PSU that is ranked between 500W — 850W to efficiently electricity all
+        of the components. Computers which are used for intensive tasks like gambling or design will
+        require a PSU to appeal to the demand that is extra and will demand elements.
+    </p>
+
+    <p style="color:white;font-size:20px;font-family:Helvetica">
+        Without the ideal amount of electricity, parts will not have the ability to run and crashes
+        might be experienced by the pc or just fail to boot up. It is suggested to have. From having a
+        PSU if you upgrade to PC components that are more 26, would you shield yourself but you yourself.
+    </p>
+    <p style="color:white;font-size:20px;font-family:Helvetica">
+        Recognizing your personal computer and its hardware elements can prove to be helpful once the time
+        is to update or replace some components, or if constructing a pc. Should an issue arise with the inner
+        workings of your own computer, you’ll get a better comprehension of the significance of each element,
+        the demand for these to maintain the good working condition and also the way to begin solving any difficulties.
+    </p><br />
+</body>
+</html>

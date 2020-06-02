@@ -1,0 +1,219 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 50px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 100%;
+            color: DarkOrange;
+        }
+
+            #myBtn:hover {
+                background-color: transparent;
+                color: pink;
+            }
+
+        body {
+            background-image: linear-gradient(to bottom right,DarkSlateGray,#141f1f);
+            padding-right: 15px;
+            padding-left: 10px;
+        }
+
+        .button {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button2 {
+            background-color: DarkKhaki;
+            color: FireBrick;
+            border-radius: 50px;
+            position: absolute;
+            top: 4px;
+            right: 685px;
+        }
+
+            .button2:hover {
+                background-color: pink;
+                color: black;
+                border-radius: 50px;
+            }
+
+        .button3 {
+            background-color: DarkKhaki;
+            color: FireBrick;
+            border-radius: 50px;
+            position: absolute;
+            top: 4px;
+            right: 348px;
+        }
+
+            .button3:hover {
+                background-color: pink;
+                color: black;
+                border-radius: 50px;
+            }
+
+        .button4 {
+            background-color: DarkKhaki;
+            color: FireBrick;
+            border-radius: 50px;
+            position: absolute;
+            top: 4px;
+            right: 10px;
+        }
+
+            .button4:hover {
+                background-color: pink;
+                color: black;
+                border-radius: 50px;
+            }
+
+        .button1 {
+            background-color: DarkKhaki;
+            color: FireBrick;
+            border-radius: 50px;
+            position: absolute;
+            top: 4px;
+            cursor: pointer;
+            font-size: 30px;
+            padding: 8px 16px;
+        }
+
+            .button1:hover {
+                background-color: pink;
+                color: black;
+                border-radius: 50px;
+            }
+    </style>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <span class="glyphicon glyphicon-circle-arrow-up"></span>
+    </button>
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+        } else {
+        mybutton.style.display = "none";
+        }
+        }
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <button class="button button2" onclick="document.location = 'history of computer.html'">
+        <strong>History of computer</strong>
+    </button>
+    <button class="button button3" onclick="document.location = 'Introduction to computer hardware.html'">
+        <strong>Introduction to computer hardware</strong>
+    </button>
+    <button class="button button4" onclick="document.location = 'computer Programming languages.html'">
+        <strong>Computer Programming languages</strong>
+    </button>
+    <button class="button button1" onclick="document.location = 'index.html'">
+        <i class="fa fa-home"></i>
+    </button>
+    <br /><br /><br /><br />
+    <svg width="1500" height="70">
+        <rect width="1500" height="70" style="fill:orange" />
+        <text x="15" y="50" fill="black" style="font-size:35px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Introduction to computer Software:</text>
+    </svg>
+    <br /><br />
+    <p style="color:white;font-size:20px;font-family:Helvetica">
+        A computer is a device that can accept human instruction, processes it and responds to it or a computer is
+        a computational device which isused to process the data under the control of a computer program.Program is
+        a sequence of instruction along with data.
+    </p>
+    <p style="color:white;font-size:20px;font-family:Helvetica">
+        CPU is called the brain of our computer because it accepts data, provides temporary memory space
+        to it until it is stored(saved) on the hard disk, performs logical operations on it and hence processes
+        (here also means converts) data into information. We all know that a computer consists of hardware and
+        software.Software is a set of programs that performs multiple tasks together. An operating system is also
+        a software (system software) that helps humans to interact with the computer system.
+    </p><img src="images/Untitled-2.png" width="400" height="300" align="right" style="margin:30px 50px"> <br />
+    <p style="color:white;font-size:20px;font-family:Helvetica">
+        A program is a set of instructions given to a computer to perform a specific operation.
+        or computer is a computational device which is used to process the data under the control of a computer
+        program.While executing the program, raw data is processed into a desired output format. These computer
+        programs are written in a programming language which are high level languages. High level languages are
+        nearly human languages which are more complicated to the computers.The computer only understands binary language
+        (the language of 0 and 1) which are called machine language, or low level language.Each individual 0 or 1 is
+        called a binary digit , or bit for short. The number of bits that make up a single command vary -- for example,
+        some CPUs process instructions that are always 32 bits longSo after knowing the basics, we are ready to create
+        a very simple and basic program. we have different languages like C, C++, C#, Java, python, etc to communicate
+        with the computers. but the programs we are going to write are in a high-level language which is almost similar
+        to human language.
+    </p>
+    <p style="color:white;font-size:20px;font-family:Helvetica">
+        Between high-level language and machine language there are assembly language also called symbolic machine code.
+        Assembly language are particularly computer architecture specific. Utility program (Assembler) is used to convert
+        assembly code into executable machine code. High Level Programming Language are portable but require Interpretation
+        or compiling to convert it into a machine language which is computer understood.
+    </p>
+    <p style="color:white;font-size:20px;font-family:Helvetica">
+        Machine and assembly languages are “low-level,” requiring a programmer to manage explicitly all of a computer’s
+        idiosyncratic features of data storage and operation. In contrast, high-level languages shield a programmer from
+        worrying about such considerations and provide a notation that is more easily written and read by programmers.
+    </p>
+    <svg width="1500" height="50">
+        <rect width="1500" height="50" style="fill:orange" />
+        <text x="15" y="35" fill="black" style="font-size:30px;font-family:'Times New Roman', Times, serif">There are two main categories of computer languages, namely Low Level Language and High Level Language:</text>
+    </svg><br /><br />
+    <ol start="1" style="color:orange;font-size:20px;font-family:Helvetica">
+        <li style="color:white;font-size:20px;font-family:Helvetica">
+            <strong style="color:orange">Low Level Languages:</strong><br />Low level languages are the basic computer instructions 
+            or better known as machine codes.A computer cannot understand any instruction given to it by the user in 
+            English or any other high level language.
+            These low level languages are very easily understandable by the machine.The main function of low level languages is
+            to interact with the hardware of the computer. They help in operating, syncing and managing all the hardware and system
+            components of the computer. They handle all the instructions which form the architecture of the hardware systems.<br />
+            1- Machine Language:
+            This is one of the most basic low level languages. The language was first developed to interact with the first
+            generation computers. It is written in binary code or machine code, which means it basically comprises of only
+            two digits – 1 and 0.<br />
+            2- Assembly Language:
+            This is the second generation programming language. It is a development on the machine language, where instead of
+            using only numbers, we use English words, names, and symbols. It is the most basic computer language necessary for
+            any processor.
+        </li>
+        <li style="color:white;font-size:20px;font-family:Helvetica">
+            <strong style="color:orange">High Level Languages:</strong><br />When we talk about high level languages, 
+            these are programming languages. Some prominent examples are PASCAL, FORTRAN, C++ etc. The important 
+            feature about such high level languages is that they allow the programmer to write programs for all types 
+            of computers and systems. Every instruction in high level language is converted to machine language for the 
+            computer to comprehend.
+        </li>
+    </ol>
+    <br />
+
+
+</body>
+</html>
