@@ -1,107 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            background-image: url('images/indexpage-01.png');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 100% 100%;
-        }
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing:border-box;
+}
 
-        .button {
-            border: none;
-            color: white;
-            padding: 16px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            transition-duration: 0.4s;
-            cursor: pointer;
-            outline: none;
-        }
+.left {
+  background-color:#2196F3;
+  padding:20px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
 
-        .button2 {
-            background-color: transparent;
-            color: white;
-            border: 1px solid Crimson;
-            border-radius: 50px;
-            position: absolute;
-            top: 150px;
-            right: 680px;
-        }
-        .button2:hover {
-            background-color: pink;
-            color: black;
-            border-radius: 50px;
-        }
+.main {
+  background-color:#f1f1f1;
+  padding:20px;
+  float:left;
+  width:60%; /* The width is 60%, by default */
+}
 
-        .button3 {
-            background-color: transparent;
-            color: white;
-            border: 1px solid Crimson;
-            border-radius: 50px;
-            position: absolute;
-            top: 150px;
-            right: 348px;
-        }
-         .button3:hover {
-            background-color: pink;
-            color: black;
-            border-radius: 50px;
-         }
+.right {
+  background-color:#4CAF50;
+  padding:20px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
 
-        .button4 {
-            background-color: transparent;
-            color: white;
-            border: 1px solid Crimson;
-            border-radius: 50px;
-            position: absolute;
-            top: 150px;
-            right: 10px;
-        }
-        .button4:hover {
-         background-color: pink;
-         color: black;
-         border-radius: 50px;
-
-        }
-
-        .button1 {
-            background-color: transparent;
-            color: LightCoral;
-            border: 1px solid white;
-            border-radius: 50px;
-            position: absolute;
-            top: 60%;
-            left: 200px;
-        }
-         .button1:hover {
-                background-color: pink;
-                color: black;
-                border-radius: 50px;
-         }
-    </style>
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+  .left, .main, .right {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+</style>
 </head>
+<body>
 
-  <body>
-          <button class="button button2" onclick="document.location = 'Introduction to computer hardware.html'" >
-              <strong>Introduction to computer hardware</strong>
-          </button>
-          <button class="button button3" onclick="document.location = 'Introduction to computer software.html'">
-              <strong>Introduction to computer software</strong>
-          </button>
-          <button class="button button4" onclick="document.location = 'computer Programming languages.html'">
-              <strong>Computer Programming languages</strong>
-          </button>
-          <button class="button button1" onclick="document.location = 'history of computer.html'">
-              <strong>History of computer</strong>
-          </button>
-      <h1 style="position: absolute;top: 35%;left: 200px ; color:white ;font-size:50px;font-style:italic">Computer Programming languages</h1>
-      <p style="position: absolute;top: 48%;left: 209px ; color:white ;font-style:inherit;font-size:20px;">A small brief about History of Computer<br /> Development  </p>
-  </body>
+<h2>Media Queries</h2>
+<p>Resize the browser window.</p>
+
+<p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
+
+<div class="left">
+  <p>Left Menu</p>
+</div>
+
+<div class="main">
+  <p>Main Content</p>
+</div>
+
+<div class="right">
+  <p>Right Content</p>
+</div>
+
+</body>
 </html>
 
